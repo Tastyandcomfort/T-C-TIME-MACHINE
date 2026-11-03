@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f6fa">
+  <meta name="description" content="T&C TIME MACHINE — explore the past, understand the present and investigate possible futures.">
+  <title>T&C TIME MACHINE</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <header class="topbar">
+    <a class="brand" href="./" aria-label="T&C Time Machine home">
+      <span class="brand-mark">T<span>&</span>C</span>
+      <span class="brand-name">TIME MACHINE<small>ONE PRESENT. INFINITE PERSPECTIVES.</small></span>
+    </a>
+    <nav class="top-actions">
+      <a href="#explore" class="nav-link">Explore</a>
+      <button id="themeToggle" class="icon-button" aria-label="Toggle appearance" title="Toggle appearance">◐</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="explore">
+      <div class="eyebrow"><span class="pulse"></span> A NEW WAY TO EXPLORE KNOWLEDGE</div>
+      <h1>Stay in the present.<br><span>Explore across time.</span></h1>
+      <p class="hero-copy">Investigate anything — from ancient civilizations to future technologies — through evidence, current information and possible scenarios.</p>
+      <form id="searchForm" class="search-shell">
+        <span class="search-symbol">⌕</span>
+        <input id="searchInput" type="search" autocomplete="off" placeholder="Search anything… e.g. Hyderabad, Earth, artificial intelligence" aria-label="Search any subject">
+        <button type="submit">Explore <span>→</span></button>
+        <div id="suggestions" class="suggestions" hidden></div>
+      </form>
+      <div class="search-hint">Try a subject, person, place, event, invention, scientific idea or celestial object.</div>
+    </section>
+
+    <section class="category-section">
+      <div class="section-heading"><div><div class="eyebrow">DISCOVER</div><h2>Explore by subject</h2></div><span class="section-note">Universal search + curated categories</span></div>
+      <div class="category-grid" id="categoryGrid">
+        <button class="category-card" data-query="History and civilizations"><span class="category-icon">⌛</span><b>History & Civilizations</b><small>Events, cultures and people</small></button>
+        <button class="category-card" data-query="Earth and humanity"><span class="category-icon">◉</span><b>Earth & Humanity</b><small>Places, people and our planet</small></button>
+        <button class="category-card" data-query="Science and technology"><span class="category-icon">⌬</span><b>Science & Technology</b><small>Discoveries and inventions</small></button>
+        <button class="category-card" data-query="Universe and space"><span class="category-icon">✧</span><b>Universe & Space</b><small>Planets, stars and missions</small></button>
+        <button class="category-card" data-query="Nature and life"><span class="category-icon">❋</span><b>Nature & Life</b><small>Evolution and ecosystems</small></button>
+        <button class="category-card" data-query="Future possibilities"><span class="category-icon">⌁</span><b>Future Possibilities</b><small>Forecasts and scenarios</small></button>
+      </div>
+    </section>
+
+    <section id="resultsSection" class="results-section" hidden>
+      <div class="section-heading results-heading"><div><div class="eyebrow">TIME EXPLORER</div><h2 id="resultTitle">Explore your subject</h2></div><button id="clearResults" class="text-button">Clear ×</button></div>
+      <div class="time-tabs" role="tablist" aria-label="Time perspective">
+        <button class="time-tab active" data-period="past" role="tab" aria-selected="true"><span class="tab-dot past-dot"></span>Past</button>
+        <button class="time-tab" data-period="present" role="tab" aria-selected="false"><span class="tab-dot present-dot"></span>Present</button>
+        <button class="time-tab" data-period="future" role="tab" aria-selected="false"><span class="tab-dot future-dot"></span>Future</button>
+      </div>
+      <div id="periodPanel" class="period-panel"></div>
+      <div class="integrity-note"><span>ⓘ</span><p><b>Evidence matters.</b> This Phase 1 build uses clearly labelled starter examples. Future data connectors will add source-linked information. Forecasts and hypothetical scenarios will never be presented as guaranteed facts.</p></div>
+    </section>
+
+    <section class="principles">
+      <div><div class="eyebrow">OUR PRINCIPLE</div><h2>Time is the perspective.<br><span>Evidence is the foundation.</span></h2></div>
+      <div class="principle-items">
+        <div><span class="status verified">VERIFIED</span><p>Historical evidence and established facts.</p></div>
+        <div><span class="status current">CURRENT</span><p>Present-day observations and available live data.</p></div>
+        <div><span class="status forecast">FORECAST</span><p>Evidence-based estimates and scientific projections.</p></div>
+        <div><span class="status hypothetical">HYPOTHETICAL</span><p>Possible scenarios that remain unconfirmed.</p></div>
+      </div>
+    </section>
+  </main>
+
+  <footer><div class="footer-brand">T&C <span>TIME MACHINE</span></div><p>Built to connect the T&C universe of websites.</p><small>Phase 1 · Independent prototype · Designed for future integration</small></footer>
+  <script src="app.js"></script>
+</body>
+</html>
